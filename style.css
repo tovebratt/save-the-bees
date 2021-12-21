@@ -3,10 +3,6 @@
     padding:0px;
 }
 
-body {
-    max-width: 600px;
-}
-
 .hero{
     min-height: 100vh;
     min-width: 100vw;
@@ -49,9 +45,27 @@ h1 {
     padding: 1rem;
     border: none;
     width: 40vw;
-    
 }
 
+.mobile-menu-open {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F1C912;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.mobile-menu-item{
+    margin: 30px;
+}
+
+.radda-bina-logo{
+    width: 150px;
+}
 
 
 @media screen and (max-width: 600px) {
