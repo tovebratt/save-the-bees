@@ -35,9 +35,13 @@ h1 {
     font-size: 51px;
     font-family: 'Special Elite', cursive;
 }
-.radda-bina-logo{
+.radda-bina-logo-mobile{
     width: 250px;
     margin-bottom: 25vh;
+
+}
+.radda-bina-logo{
+    width: 250px;
 }
 .kom-igang {
     background-color: #F1C912;
@@ -63,9 +67,23 @@ h1 {
     margin: 30px;
 }
 
-.radda-bina-logo{
+.mobile-menu-logo{
     width: 150px;
+    padding: 0;
+    margin: 0;
 }
+
+.menu-large {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-right: 10vw;
+    margin-left: 5vw;
+}
+
+.menu-item {
+    padding: 10px;
+}
+
 
 
 @media screen and (max-width: 600px) {
@@ -88,11 +106,30 @@ h1 {
       background-position: center;
       background-size: cover;
     }
+    .hero-content{
+        margin-top: 40vh;
+    }
     .header-large {
+        width: 100vw;
+        height: 20vh;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #FEFAE6;
+        padding-left: 10px;
+        padding-right: 10px;    ;
     }
     .header-mobile {
         display: none;
         justify-content: right;
+    }
+    .radda-bina-logo-mobile{
+        display: none;
+    }
+    h1 {
+        margin-bottom: 5vh;
+    }
+    .kom-igang{
+        font-size: 20px;
     }
   }
