@@ -1,4 +1,84 @@
 *{
     margin: 0px;
     padding:0px;
+}
+
+body {
+    max-width: 600px;
+}
+
+.hero{
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hamburger {
+    position: sticky;
+    margin-top: 5vh;
+    margin-right: 5vh;
+}
+.hamburger-line {
+    display: block;
+    min-width: 30px;
+    min-height: 1px;
+    border-radius: 5px;
+    background-color: #FEFAE6;
+    padding: 2px;
+    margin: 5px;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #FEFAE6;
+    font-size: 51px;
+    font-family: 'Special Elite', cursive;
+}
+.radda-bina-logo{
+    width: 250px;
+    margin-bottom: 25vh;
+}
+.kom-igang {
+    background-color: #F1C912;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    border: none;
+    width: 40vw;
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .hero {
+      background-image: url('img/mobile/hero-mobile.png');
+      background-position: center;
     }
+    .header-large {
+        display: none;
+    }
+    .header-mobile {
+        display: flex;
+        justify-content: right;
+    }
+  }
+
+@media screen and (min-width: 601px) {
+    .hero {
+      background-image: url('img/tablet/hero-tablet.png');
+      background-position: center;
+      background-size: cover;
+    }
+    .header-large {
+        display: flex;
+    }
+    .header-mobile {
+        display: none;
+        justify-content: right;
+    }
+  }
