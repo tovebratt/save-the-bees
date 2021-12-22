@@ -9,6 +9,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.hero a {
+    text-decoration: none;
+    color: #FEFAE6;
+}
+
+.hero a:hover {
+    text-decoration: underline;
+}
+
 .hamburger {
     position: sticky;
     margin-top: 5vh;
@@ -41,11 +50,11 @@ h1 {
 
 }
 .radda-bina-logo{
-    width: 250px;
+    width: 200px;
 }
 .kom-igang {
     background-color: #F1C912;
-    border-radius: 1.2rem;
+    border-radius: 2rem;
     padding: 1rem;
     border: none;
     width: 40vw;
@@ -74,17 +83,17 @@ h1 {
 }
 
 .menu-large {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 50px;
     margin-right: 10vw;
     margin-left: 5vw;
+    display: flex;
+    gap: 8vw;
 }
 
 .menu-item {
     padding: 10px;
 }
-
-
 
 @media screen and (max-width: 600px) {
     .hero {
@@ -127,9 +136,15 @@ h1 {
         display: none;
     }
     h1 {
-        margin-bottom: 5vh;
+        margin-bottom: 10vh;
+        margin-top: -15vh;
+        font-size: 80px;
     }
     .kom-igang{
         font-size: 20px;
+    }
+
+    .hero button {
+        max-width: 15rem;
     }
   }
