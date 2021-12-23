@@ -165,6 +165,7 @@ h1 {
         top: 90vh;
         left: 88vw;
         width: 15vh;
+        transform: translateX(-50%) translateY(-50%);
     }
   }
   
