@@ -1,4 +1,202 @@
 *{
     margin: 0px;
     padding:0px;
+}
+
+.hero{
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero a {
+    text-decoration: none;
+    color: #FEFAE6;
+}
+
+.hero a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    position: sticky;
+    margin-top: 5vh;
+    margin-right: 5vh;
+}
+.hamburger-line {
+    display: block;
+    min-width: 30px;
+    min-height: 1px;
+    border-radius: 5px;
+    background-color: #FEFAE6;
+    padding: 2px;
+    margin: 5px;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #FEFAE6;
+    font-size: 51px;
+    font-family: 'Special Elite', cursive;
+}
+.radda-bina-logo-mobile{
+    width: 250px;
+    margin-bottom: 25vh;
+
+}
+.radda-bina-logo{
+    width: 200px;
+}
+.kom-igang {
+    background-color: #F1C912;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: none;
+    width: 40vw;
+}
+
+.mobile-menu-open {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F1C912;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.mobile-menu-item{
+    margin: 30px;
+}
+
+.mobile-menu-logo{
+    width: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-large {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-right: 10vw;
+    margin-left: 5vw;
+    display: flex;
+    gap: 8vw;
+}
+
+.menu-item {
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+      background-image: url('img/mobile/hero-mobile.png');
+      background-position: center;
     }
+    .header-large {
+        display: none;
+    }
+    .header-mobile {
+        display: flex;
+        justify-content: right;
+    }
+    .bee-icons {
+        display: none;
+    }
+    .app-icon {
+        position: absolute;
+        top: 86vh;
+        left: 70vw;
+        width: 15vh;
+    }
+  }
+
+@media screen and (min-width: 601px) {
+    .hero {
+      background-image: url('img/tablet/hero-tablet.png');
+      background-position: center;
+      background-size: cover;
+    }
+    .hero-content{
+        margin-top: 40vh;
+    }
+    .header-large {
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #FEFAE6;
+        padding-left: 50px;
+        padding-right: 10px;
+
+    }
+    .header-mobile {
+        display: none;
+        justify-content: right;
+    }
+    .radda-bina-logo-mobile{
+        display: none;
+    }
+    h1 {
+        margin-bottom: 10vh;
+        margin-top: -15vh;
+        font-size: 80px;
+    }
+    .kom-igang{
+        font-size: 20px;
+    }
+
+    .hero button {
+        max-width: 15rem;
+    }
+    .bee-icons {
+        display: none;
+    }
+    .app-icon {
+        position: absolute;
+        top: 90vh;
+        left: 88vw;
+        width: 15vh;
+        transform: translateX(-50%) translateY(-50%);
+    }
+  }
+  
+  @media screen and (min-width: 1100px) {
+    .hero-view-desktop{
+        display:flex
+    }
+    .bee-icons {
+        display: flex;
+        flex-direction: column;
+        width: 15vw;
+        margin: 10vw 15vw 0 5vw;
+    }
+
+    .bee-icons div {
+        position: relative;
+    }
+
+    .bee-icons p {
+        color: #FEFAE6;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .app-icon {
+        position: absolute;
+        top: 80vh;
+        left: 88vw;
+        width: 15vh;
+    }
+
+  }
