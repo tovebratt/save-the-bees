@@ -99,6 +99,55 @@ h1 {
     padding: 10px;
 }
 
+.footer{
+    background-color: #F1C912;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10vh 5vw;
+}
+.some-icons{
+    margin-right: 54vw;
+}
+.footer h4 {
+    font-size: 34px;
+    padding: 2vh 0;
+}
+.news-letter-signup {
+
+}
+.news-letter-input {
+    min-width: 58vw;
+    min-height: 5vh;
+    border: none;
+    border-radius: 40px;
+    padding: 1vh;
+}
+
+.news-letter-input-containter {
+    
+}
+.footer ::placeholder {
+    color: #000000;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.news-letter-signup button {
+    position: relative;
+    border-radius: 21px;
+    height: 4.5vh;
+    width: 6vw;
+    left: -44px;
+    bottom: -4px;
+    border: none;
+    background-color: #F1C912;
+}
+.footer-logo {
+    width: 33vh;
+    margin: 8vh;
+}
+
 @media screen and (max-width: 600px) {
     .hero {
       background-image: url('img/mobile/hero-mobile.png');
@@ -204,3 +253,4 @@ h1 {
     }
 
   }
+
