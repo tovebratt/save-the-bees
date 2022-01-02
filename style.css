@@ -108,25 +108,25 @@ h1 {
     padding: 10vh 5vw;
 }
 .some-icons{
-    margin-right: 54vw;
+    margin-right: 240px;
+    margin-bottom: 5vh;
 }
 .footer h4 {
     font-size: 34px;
-    padding: 2vh 0;
+    padding: 2vh;
 }
-.news-letter-signup {
 
-}
 .news-letter-input {
-    min-width: 58vw;
-    min-height: 5vh;
+    min-width: 260px;
+    min-height: 45px;
     border: none;
     border-radius: 40px;
     padding: 1vh;
 }
 
-.news-letter-input-containter {
-    
+.news-letter-input-container {
+    position: relative;
+    left: 3vw;
 }
 .footer ::placeholder {
     color: #000000;
@@ -135,18 +135,23 @@ h1 {
 }
 .news-letter-signup button {
     position: relative;
-    border-radius: 21px;
-    height: 4.5vh;
-    width: 6vw;
-    left: -44px;
+    border-radius: 20vh;
+    height: 48px;
+    width: 50px;
+    left: -59px;
     bottom: -4px;
     border: none;
     background-color: #F1C912;
 }
 .footer-logo {
     width: 33vh;
-    margin: 8vh;
+    margin: 8vh 8vh 4vh 8vh;
 }
+
+.footer-logo-large {
+    display: none;
+}
+
 
 @media screen and (max-width: 600px) {
     .hero {
@@ -169,6 +174,10 @@ h1 {
         left: 70vw;
         width: 15vh;
     }
+    .footer-app-logo{
+        display: none;
+    }
+
   }
 
 @media screen and (min-width: 601px) {
@@ -220,6 +229,40 @@ h1 {
         width: 15vh;
         transform: translateX(-50%) translateY(-50%);
     }
+
+    .footer-large{
+        display: flex;
+        width: 80vw;
+        flex-direction: row;
+        justify-content: space-around;
+        order: 3;
+    }
+    .some-icons {
+        order: 2;
+    }
+    .copyright {
+        order: 4 ;
+    }
+    .footer-app-logo{
+        display: block;
+        width: 18vw;
+        position: relative;
+        top: -68px;
+    }
+    .news-letter-input{
+        min-width: 320px;
+    }
+    .footer h4 {
+        padding: 2vh 4vw;
+    }
+    .footer-logo {
+        order: 1;
+        padding: 0 ;
+        margin: 2vh 0 8vh 0;
+    }
+    .some-icons{
+        margin-right: 58vw;
+    }
   }
   
   @media screen and (min-width: 1100px) {
@@ -250,6 +293,31 @@ h1 {
         top: 80vh;
         left: 88vw;
         width: 15vh;
+    }
+    .footer-large {
+            width: 90vw;
+    }
+    .some-icons{
+        position: relative;
+        left: -80px;
+        margin-top: 10vh
+    }
+    .footer-logo{
+        display:none;
+    }
+    .footer-logo-large {
+        display: block;
+        position: relative;
+        top: -180px;
+    }
+    .news-letter-signup{
+        order: 1;
+    }
+    .footer-logo-large {
+        order: 2;
+    }
+    .footer-app-logo {
+        order: 3;
     }
 
   }
