@@ -99,6 +99,58 @@ h1 {
     padding: 10px;
 }
 
+.footer{
+    background-color: #F1C912;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10vh 5vw;
+}
+.some-icons{
+    margin-right: 240px;
+    margin-bottom: 5vh;
+}
+.footer h4 {
+    font-size: 34px;
+    padding: 2vh;
+}
+
+.news-letter-input {
+    min-width: 260px;
+    min-height: 45px;
+    border: none;
+    border-radius: 40px;
+    padding: 1vh;
+}
+
+.news-letter-input-container {
+    position: relative;
+    left: 3vw;
+}
+.footer ::placeholder {
+    color: #000000;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.news-letter-signup button {
+    position: relative;
+    border-radius: 20vh;
+    height: 48px;
+    width: 50px;
+    left: -59px;
+    bottom: -4px;
+    border: none;
+    background-color: #F1C912;
+}
+.footer-logo {
+    width: 33vh;
+    margin: 8vh 8vh 4vh 8vh;
+}
+
+.footer-logo-large {
+    display: none;
+
 /* WHY SECTION */
 
 .why {
@@ -140,7 +192,7 @@ h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
-=======
+  
 .cookie-banner {
     z-index: 10;
     display: flex;
@@ -188,6 +240,10 @@ margin-left: 70vw;
         left: 70vw;
         width: 15vh;
     }
+    .footer-app-logo{
+        display: none;
+    }
+
   }
 /* TABLET */
 @media screen and (min-width: 601px) {
@@ -242,6 +298,40 @@ margin-left: 70vw;
         transform: translateX(-50%) translateY(-50%);
     }
 
+    .footer-large{
+        display: flex;
+        width: 80vw;
+        flex-direction: row;
+        justify-content: space-around;
+        order: 3;
+    }
+    .some-icons {
+        order: 2;
+    }
+    .copyright {
+        order: 4 ;
+    }
+    .footer-app-logo{
+        display: block;
+        width: 18vw;
+        position: relative;
+        top: -68px;
+    }
+    .news-letter-input{
+        min-width: 320px;
+    }
+    .footer h4 {
+        padding: 2vh 4vw;
+    }
+    .footer-logo {
+        order: 1;
+        padding: 0 ;
+        margin: 2vh 0 8vh 0;
+    }
+    .some-icons{
+        margin-right: 58vw;
+    }
+  
     /* WHY-SECTION TABLET */
     .why {
         flex-direction: row;
@@ -310,6 +400,31 @@ margin-left: 70vw;
         top: 80vh;
         left: 88vw;
         width: 15vh;
+    }
+    .footer-large {
+            width: 90vw;
+    }
+    .some-icons{
+        position: relative;
+        left: -80px;
+        margin-top: 10vh
+    }
+    .footer-logo{
+        display:none;
+    }
+    .footer-logo-large {
+        display: block;
+        position: relative;
+        top: -180px;
+    }
+    .news-letter-signup{
+        order: 1;
+    }
+    .footer-logo-large {
+        order: 2;
+    }
+    .footer-app-logo {
+        order: 3;
     }
 
     /* WHY-SECTION DESKTOP */
