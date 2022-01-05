@@ -51,6 +51,7 @@ h1 {
 }
 .radda-bina-logo{
     width: 200px;
+    margin-left:5vw;
 }
 .kom-igang {
     background-color: #F1C912;
@@ -193,7 +194,42 @@ h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
-  
+
+/* VIDEO SECTION */
+
+.video-section {
+    background-color: #F0EEE2;
+    padding: 20px;
+}
+
+.video-img {
+    width: 30vh;
+    display: block;
+    margin: 3vh auto;
+}
+
+.video {
+    visibility: hidden;
+    display: none;
+}
+
+.video-h3 {
+    font-family: 'Special Elite', cursive;
+    width: 30vh;
+    margin: 6vh auto 2vh auto;
+    font-size: 32px;
+    font-weight: 400;   
+}
+
+.video-p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    width: 30vh;
+    margin: auto;    
+}
+
+/* COOKIE SECTION */
+
 .cookie-banner {
     z-index: 10;
     display: flex;
@@ -238,7 +274,7 @@ margin-left: 70vw;
     .app-icon {
         position: absolute;
         top: 86vh;
-        left: 70vw;
+        right: 1vw;
         width: 15vh;
     }
     .footer-app-logo{
@@ -265,8 +301,8 @@ margin-left: 70vw;
         flex-direction: row;
         justify-content: space-between;
         color: #FEFAE6;
-        padding-left: 50px;
-        padding-right: 10px;
+        /*padding-left: 50px;
+        padding-right: 10px;*/
 
     }
     .header-mobile {
@@ -337,18 +373,18 @@ margin-left: 70vw;
     .why {
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 0px 10px;
+        justify-content: left;
+
+        padding: 0px 10px 40px 10px;
         background-image: url('img/desktop/honey.png');
         background-repeat: no-repeat;
-        background-position-x: 33em;
-        background-position-y: 60em;
+        background-position-x: 28em;
+        background-position-y: 32em;
         background-size: 700px;
     }
 
     .why-box {
         width: 45%;
-        height: 28vh;
-        margin: 0px;
         padding: 0px 10px;
     }
 
@@ -361,12 +397,39 @@ margin-left: 70vw;
         width: 60%;
     }
 
+    .why-img-small {
+        height: 41%;
+    }
+
     .why-h3 {
         font-size: 48px;
     }
 
     .why-p {
         font-size: 18px;
+    }
+
+    /* VIDEO-SECTION TABLET */
+
+    .video-img {
+        visibility: hidden;
+        display: none;
+    }
+
+    .video {
+        visibility: visible;
+        display: block;
+        align-items: center;
+        margin: 3vh auto;
+    }
+
+    .video-h3 {
+        font-size: 48px;
+        width: 70vh;
+    }
+
+    .video-p {
+        width: 70vh;
     }
 
   }
