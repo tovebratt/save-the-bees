@@ -228,6 +228,41 @@ h1 {
     margin: auto;    
 }
 
+/* DID YOU KNOW SECTION */
+
+.did-you-know {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vw 5vw;
+    background-color: #FEFAE6;
+}
+
+.did-you-know-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.did-you-know-card {
+    padding: 20px;
+    /* padding-left: 5vw; */
+}
+.did-you-know-image {
+    width: 300px;
+    padding-bottom: 10px;
+}
+.did-you-know-heading{
+font-size: 52px;
+text-align: center;
+padding: 3vw;
+}
+.did-you-know-card-heading{
+font-size: 26px;
+}
+
+.did-you-know-text{
+font-size: 18px;
+}
 /* COOKIE SECTION */
 
 .cookie-banner {
@@ -279,6 +314,14 @@ margin-left: 70vw;
     }
     .footer-app-logo{
         display: none;
+    }
+
+    /* did you know section mobile */
+    .did-you-know-grid {
+        grid-template-columns: 1fr;
+    }
+    .did-you-know-card {
+        padding-left: 20px;
     }
 
   }
@@ -369,6 +412,11 @@ margin-left: 70vw;
         margin-right: 58vw;
     }
   
+    /* did you know section tablet */
+    .did-you-know-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
     /* WHY-SECTION TABLET */
     .why {
         flex-direction: row;
@@ -490,7 +538,10 @@ margin-left: 70vw;
     .footer-app-logo {
         order: 3;
     }
-
+    /* did you know section desktop */
+    .did-you-know-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     /* WHY-SECTION DESKTOP */
     .why {
         justify-content: space-around;
