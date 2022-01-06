@@ -269,42 +269,62 @@ font-size: 18px;
 .webbshop {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
 }
 
 .product-card {
 display: flex;
 flex-direction: column;
+flex-shrink: 2;
 }
 
 .product-card-img {
-    width: 250px;
+    width: 220px;
 }
 
 .product-card p {
     position:relative;
-    left: 40px;
+    left: 33px;
     top: -20px;
 }
 
 .product-card-brand{
+    font-size: 14px;
     font-weight: 600;
 }
 
 .product-card-item {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .product-card-price {
-    font-size: 20px;
+    font-size: 16px;
 
 }
 
 .shopping-cart-icon {
-    width: 36px;
+    width: 26px;
     align-self: flex-end;
     position: relative;
-    top: -62px;
-    left: -30px;
+    top: -52px;
+    left: -26px;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+.webbshop-btn{
+    width: 220px;
+    margin-bottom:100px;
+    font-size: 18px;
+    background-color: #F1C912;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: none;
 }
 /* COOKIE SECTION */
 
@@ -365,6 +385,17 @@ margin-left: 70vw;
     }
     .did-you-know-card {
         padding-left: 20px;
+    }
+
+    /* WEBBSHOP */
+    .sweater {
+        display: none;
+    }
+    .mug{
+        display: none;
+    }
+    .t-shirt {
+        display: none;
     }
 
   }
@@ -522,7 +553,16 @@ margin-left: 70vw;
     .video-p {
         width: 70vh;
     }
-
+    /* WEBBSHOP */
+    .sweater {
+        display: none;
+    }
+    .mug{
+        display: none;
+    }
+    .t-shirt {
+        display: none;
+    }
   }
   
   /* DESKTOP */
@@ -609,6 +649,16 @@ margin-left: 70vw;
 
     .why-img {
         width: 60%;
+    }
+    /* WEBBSHOP */
+    .sweater {
+        display: flex;
+    }
+    .mug{
+        display: flex;
+    }
+    .t-shirt {
+        display: flex;
     }
 
   }
