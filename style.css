@@ -263,6 +263,49 @@ font-size: 26px;
 .did-you-know-text{
 font-size: 18px;
 }
+
+/* WEBBSHOP SECTION */
+
+.webbshop {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-card {
+display: flex;
+flex-direction: column;
+}
+
+.product-card-img {
+    width: 250px;
+}
+
+.product-card p {
+    position:relative;
+    left: 40px;
+    top: -20px;
+}
+
+.product-card-brand{
+    font-weight: 600;
+}
+
+.product-card-item {
+    font-size: 20px;
+}
+
+.product-card-price {
+    font-size: 20px;
+
+}
+
+.shopping-cart-icon {
+    width: 36px;
+    align-self: flex-end;
+    position: relative;
+    top: -62px;
+    left: -30px;
+}
 /* COOKIE SECTION */
 
 .cookie-banner {
